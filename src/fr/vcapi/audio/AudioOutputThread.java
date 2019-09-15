@@ -20,7 +20,7 @@ public class AudioOutputThread extends Thread {
 	
 	private Queue<VoicePacket> queue = new LinkedList<VoicePacket>();
 	private boolean running;
-	
+	//Use variables here it's better than the value
 	private static AudioFormat format = new AudioFormat(44100, 16, 1, true, true);
 	private static DataLine.Info sourceInfo = new DataLine.Info(SourceDataLine.class, format);
 	private SourceDataLine sourceLine;
