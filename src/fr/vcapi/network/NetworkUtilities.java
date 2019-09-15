@@ -113,6 +113,7 @@ public abstract class NetworkUtilities extends Thread {
 	 * @return DataClient
 	 */
 	public DataClient getClientByUUID(UUID uuid) {
+		//tu devrais trier tes clients suivant l'uuid, comme ça tu pourrais plus rapidement les retrouver par dichotomie
 		for (DataClient client : this.clients) {
 			if (client.getUUID().equals(uuid)) {
 				return client;
